@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <div id="nav-left" onclick="navigate_left()">
+                <a class="material-icons style1">navigate_before</a>
+            </div>
+            <div id="content">
+                <div style="background-color: #eeeeee" class="page active" id="sophie">
+                    <h2>Sophie Danielson</h2>
+                    <div class="code-window"></div>
+                </div>
+                <div style="background-color: #e9e9e9" class="page behind" id="jacob">
+                    <h2>Jacob Hoekert</h2>
+                    <div class="code-window"></div>                
+                </div>
+                <div style="background-color: #eeeeee" class="page behind" id="nathan">
+                    <h2>Nathan Bird</h2>
+                    <div class="code-window"></div>
+                </div>
+                <div style="background-color: #e9e9e9" class="page behind" id="stephen">
+                    <h2>Stephen Barton</h2>
+                    <div class="code-window"></div>
+                </div>
+            </div>    
+            <div id="nav-right" onclick="navigate_right()">
+                <a class="material-icons style1">navigate_next</a>
+            </div>
+        </main>
+        <script>
+        const pageIds = ['sophie', 'jacob', 'nathan', 'stephen'];
+        let currentPosition = 0;
+        function navigate_left(){
+            document.getElementById(pageIds[currentPosition]).classList.remove('active');
+            document.getElementById(pageIds[currentPosition-1]).classList.remove('front');
+            document.getElementById(pageIds[currentPosition]).classList.add('behind');
+            document.getElementById(pageIds[currentPosition-1]).classList.add('active');
+
+            currentPosition--;
+            if(currentPosition < 0){currentPosition = 0;}
+        }
+        function navigate_right(){
+            document.getElementById(pageIds[currentPosition]).classList.remove('active');
+            document.getElementById(pageIds[currentPosition+1]).classList.remove('behind');
+            document.getElementById(pageIds[currentPosition]).classList.add('front');
+            document.getElementById(pageIds[currentPosition+1]).classList.add('active');
+
+            currentPosition++;
+            if(currentPosition > 3){currentPosition = 3;}
+        }
+        </script>
+    </body>
+</html>
