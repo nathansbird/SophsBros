@@ -45,14 +45,16 @@ main {
     position: relative;
 }
 .page {
-    width: calc(100% - 96px);
-    height: calc(100% - 96px);
+    width: calc(100% - 128px);
+    height: calc(100% - 128px);
     position: absolute;
+    display: grid;
+    grid-template-rows: 64px 1fr;
     top: 0;
     left: 0;
-    transition-duration: 300ms;
+    transition-duration: 500ms;
     z-index: 1;
-    padding: 48px;
+    padding: 64px;
 }
 .front {
     transform: translateX(-100%);
@@ -73,7 +75,12 @@ h2{
     color: #555;
     margin: 0px;
 }
+p {
+    font-family: Roboto;
+}
 .code-window{
-    height: -webkit-fill-available;
-    margin-top: 128px;
+    margin-top: 12px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 12px;
 }
