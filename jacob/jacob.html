@@ -1,0 +1,60 @@
+<DOCTYPE! html>
+<html>
+  <head>
+    <title> Jacob Son of God </title>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet"
+          type = "text/css"
+          href = "/jacob.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/db0374bc7d.js" crossorigin="anonymous"></script>  
+  </head>
+   <body>
+     <main id="main">
+        <section id="image-section">
+          <div id="image-container">
+            <img id="image" src="/Jacob.JPG" alt="Jacob">
+          </div>
+          <div id="intro">
+            <p id="name" class="centered-text"> Hi, I'm Jacob. I am born to be loved. </p>
+            <p class="question centered-text"> Why else do I exist? </p>
+            <a id="down-carrot" href="#my-why-section" onclick="return animation()"><i class="fas fa-chevron-down" ></i></a>
+          </div>
+        </section>
+        <section id="my-why-section">
+          <div id="my-why">
+            <div id="recognize" class="icon">
+              <i class="far fa-eye"></i>
+              <p> to recognize beautiful things.</p>
+            </div>
+            <div id="create" class="icon">
+              <i class="fas fa-seedling"></i>
+              <p> to create beautiful things.</p>
+            </div>
+            <div id="empower" class="icon">
+              <i class="fas fa-hand-holding-heart"></i>
+              <p> and to empower beautiful things.</p>
+            </div>
+          </div>
+          <div id="question2">
+              <p class="question centered-text"> More in depth explanation </p>
+              <a id="down-carrot2" href="#vision-section"<i class="fas fa-chevron-down"></i></a>
+            </div>
+        </section>
+        <section id="vision-section">
+          <div id="vision-statement-container">
+            <h2 id="vision-title" class="centered-text"> My Vision Statement </h2>
+            <p id="vision-statement"> I was created to be loved by God and to create beautiful things that bring Him glory. To both recognize and create beautiful things. I was created to use all of my gifts, passions, and resources to glorify God and to help others to recognize why they were created and empower them to use their gifts, passions, and resources to also glorify God by loving them, giving them opportunities, and loosening the chains of injustice and oppression, both spiritually and situationally.</p>
+          </div>
+        </section>
+      </main>
+  
+      <script type="text/javascript">
+        function animation() {
+          document.getElementById('recognize').classList.add("fade-in");
+          document.getElementById('create').classList.add("fade-in");
+          document.getElementById('empower').classList.add("fade-in");
+        }
+      </script>
+   </body>
+</html>
