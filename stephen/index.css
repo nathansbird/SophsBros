@@ -1,0 +1,26 @@
+h2 {
+    color: #0B3861;
+    font-size: 5em;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  section {
+    background: url("https://s-media-cache-ak0.pinimg.com/originals/36/8b/8c/368b8c394e40a6535694cf0eea595ede.jpg");
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-color: lightgray;
+    height: 500px;
+  }
+  h3 {
+    color: #0B3861;
+    font-size: 1.75em;
+    text-align: center;
+  }
+  #box-container {
+      display: flex;
+      height: 150px;
+      align-items: center;
+      justify-content: center;
+    }
+  
